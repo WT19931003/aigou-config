@@ -1,0 +1,13 @@
+server:
+  port: 9528
+spring:
+  application:
+    name: AIGOU-ZUUL
+  instance:
+    instance-id: aigou-zuul
+    prefer-ip-address: true
+zuul:
+  routes:
+   plat: /user/**
+  ignored-services: "*" #忽略掉服务名访问方式 使用上面/user的方式来访问
+  prefix: "/aigou" #添加 前缀访问  localhost:9527/services/user/provider/user/2
