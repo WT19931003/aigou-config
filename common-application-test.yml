@@ -4,5 +4,4 @@ spring:
   application:
     name: COMMON
   instance:
-    prefer-ip-address: true
     instance-id: common
